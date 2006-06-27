@@ -1,0 +1,9 @@
+# Config file for 915resolution application
+# You can "patch" your card to have possible better resolutions on your laptop
+# List of possible modes to replace: 915resolution -l
+#
+# Syntax: mode width heght
+# Example:
+#7c 1280 800
+#7d 1280 800
+#7e 1280 800

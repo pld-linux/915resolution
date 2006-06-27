@@ -1,0 +1,38 @@
+#!/bin/sh
+#
+# 915resolution	Change the resolution of an available vbios mode for the 915/865/915 Intel graphic chipset
+#
+# chkconfig:	2345 15 89
+# description:	set resolution for your laptop
+# processname:	915resolution
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+# Get service config
+if [ ! -f /etc/sysconfig/915resolution ]; then
+	exit 0
+fi
+
+# See how we were called.
+case "$1" in
+  start|restart|reload|force-reload)
+	grep -v "^#" /etc/sysconfig/915resolution | while read line
+	do
+		#TODO: make here some better better args checking
+		mode=`echo ${line} | awk '{ print $1;}'`
+		width=`echo ${line} | awk '{ print $2;}'`
+		height=`echo ${line} | awk '{ print $3;}'`
+		run_cmd "Replacing Mode ${mode} of your card with ${width}x${height}" "915resolution ${mode} ${width} ${height}"
+	done
+	;;
+  stop)
+	# nothing to do
+	;;
+  status)
+  	915resolution -l
+	;;
+  *)
+	msg_usage "$0 {start|stop|restart|reload|force-reload|status}"
+	exit 3
+esac
