@@ -10,8 +10,8 @@ Source0:	http://www.geocities.com/stomljen/%{name}-%{version}.tar.gz
 Source1:	%{name}.sysconfig
 Source2:	%{name}.init
 URL:		http://perso.wanadoo.fr/apoirier/
-PreReq:		rc-scripts
 Requires(post,preun):	/sbin/chkconfig
+Requires:	rc-scripts
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,7 +30,21 @@ it's changes to take effect.
 the code differs substantially. 915resolution's code base is much
 simpler. 915resolution also allows the modification of bits per pixel.
 
-#%description -l pl
+%description -l pl
+915resolution to narzêdzie do modyfikowania BIOS-u graficznego uk³adów
+graficznych Intela z serii 800 i 900. Obejmuje to uk³ady 845G, 855G i
+865G, a tak¿e 915G, 915GM i 945G. Zmiany te s± potrzebne, aby
+umo¿liwiæ wy¶wietlanie pewnych rozdzielczo¶ci obrazu dla serwera
+graficznego Xorg lub XFree86.
+
+Modyfikacje wykonywane przez 915resolution w BIOS-ie nie s± trwa³e.
+Nie ma niebezpieczeñstwa trwa³ej zmiany BIOS-u. Oznacza to tak¿e, ¿e
+915resolution musi byæ uruchamiane przy ka¿dym starcie komputera, aby
+zmiany da³y efekt.
+
+915resolution wywodzi siê z narzêdzia 855resolution. Jednak kod ró¿ni
+siê znacz±co - kod 915resolution jest znacznie prostszy. 915resolution
+pozwala dodatkowo na zmianê liczby bitów na piksel.
 
 %prep
 %setup -q
