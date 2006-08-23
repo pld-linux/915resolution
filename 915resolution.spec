@@ -12,6 +12,7 @@ Source2:	%{name}.init
 URL:		http://perso.wanadoo.fr/apoirier/
 Requires(post,preun):	/sbin/chkconfig
 Requires:	rc-scripts
+ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
