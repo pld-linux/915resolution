@@ -9,7 +9,7 @@ Source0:	http://www.geocities.com/stomljen/%{name}-%{version}.tar.gz
 # Source0-md5:	a3441e5662c5ff1e00dc97de4487e8f8
 Source1:	%{name}.sysconfig
 Source2:	%{name}.init
-URL:		http://perso.wanadoo.fr/apoirier/
+URL:		http://www.geocities.com/stomljen/
 Requires(post,preun):	/sbin/chkconfig
 Requires:	rc-scripts
 ExclusiveArch:	%{ix86} %{x8664}
