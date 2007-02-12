@@ -1,7 +1,7 @@
 # TODO - http://archive.ubuntu.com/ubuntu/pool/universe/9/915resolution/915resolution_0.5-1ubuntu6.diff.gz
 #
 Summary:	Change the resolution of an available vbios mode
-Summary(pl):	Zmiana rozdzielczo¶ci dostêpnych trybów vbios
+Summary(pl.UTF-8):   Zmiana rozdzielczoÅ›ci dostÄ™pnych trybÃ³w vbios
 Name:		915resolution
 Version:	0.5.2
 Release:	1
@@ -33,21 +33,21 @@ it's changes to take effect.
 the code differs substantially. 915resolution's code base is much
 simpler. 915resolution also allows the modification of bits per pixel.
 
-%description -l pl
-915resolution to narzêdzie do modyfikowania BIOS-u graficznego uk³adów
-graficznych Intela z serii 800 i 900. Obejmuje to uk³ady 845G, 855G i
-865G, a tak¿e 915G, 915GM i 945G. Zmiany te s± potrzebne, aby
-umo¿liwiæ wy¶wietlanie pewnych rozdzielczo¶ci obrazu dla serwera
+%description -l pl.UTF-8
+915resolution to narzÄ™dzie do modyfikowania BIOS-u graficznego ukÅ‚adÃ³w
+graficznych Intela z serii 800 i 900. Obejmuje to ukÅ‚ady 845G, 855G i
+865G, a takÅ¼e 915G, 915GM i 945G. Zmiany te sÄ… potrzebne, aby
+umoÅ¼liwiÄ‡ wyÅ›wietlanie pewnych rozdzielczoÅ›ci obrazu dla serwera
 graficznego Xorg lub XFree86.
 
-Modyfikacje wykonywane przez 915resolution w BIOS-ie nie s± trwa³e.
-Nie ma niebezpieczeñstwa trwa³ej zmiany BIOS-u. Oznacza to tak¿e, ¿e
-915resolution musi byæ uruchamiane przy ka¿dym starcie komputera, aby
-zmiany da³y efekt.
+Modyfikacje wykonywane przez 915resolution w BIOS-ie nie sÄ… trwaÅ‚e.
+Nie ma niebezpieczeÅ„stwa trwaÅ‚ej zmiany BIOS-u. Oznacza to takÅ¼e, Å¼e
+915resolution musi byÄ‡ uruchamiane przy kaÅ¼dym starcie komputera, aby
+zmiany daÅ‚y efekt.
 
-915resolution wywodzi siê z narzêdzia 855resolution. Jednak kod ró¿ni
-siê znacz±co - kod 915resolution jest znacznie prostszy. 915resolution
-pozwala dodatkowo na zmianê liczby bitów na piksel.
+915resolution wywodzi siÄ™ z narzÄ™dzia 855resolution. Jednak kod rÃ³Å¼ni
+siÄ™ znaczÄ…co - kod 915resolution jest znacznie prostszy. 915resolution
+pozwala dodatkowo na zmianÄ™ liczby bitÃ³w na piksel.
 
 %prep
 %setup -q
