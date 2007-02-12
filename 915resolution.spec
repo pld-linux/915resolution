@@ -1,7 +1,7 @@
 # TODO - http://archive.ubuntu.com/ubuntu/pool/universe/9/915resolution/915resolution_0.5-1ubuntu6.diff.gz
 #
 Summary:	Change the resolution of an available vbios mode
-Summary(pl.UTF-8):   Zmiana rozdzielczości dostępnych trybów vbios
+Summary(pl.UTF-8):	Zmiana rozdzielczości dostępnych trybów vbios
 Name:		915resolution
 Version:	0.5.2
 Release:	1
