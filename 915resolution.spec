@@ -4,13 +4,14 @@ Summary:	Change the resolution of an available vbios mode
 Summary(pl.UTF-8):	Zmiana rozdzielczości dostępnych trybów vbios
 Name:		915resolution
 Version:	0.5.3
-Release:	1
+Release:	2
 License:	Public Domain
 Group:		Applications/System
 Source0:	http://www.geocities.com/stomljen/%{name}-%{version}.tar.gz
 # Source0-md5:	ed287778a53d02c31a7a6a52bc146291
 Source1:	%{name}.sysconfig
 Source2:	%{name}.init
+Patch0:		%{name}-i965GM.patch
 URL:		http://www.geocities.com/stomljen/
 Requires(post,preun):	/sbin/chkconfig
 Requires:	rc-scripts
@@ -51,6 +52,7 @@ pozwala dodatkowo na zmianę liczby bitów na piksel.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %{__make} clean
