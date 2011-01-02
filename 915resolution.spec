@@ -4,7 +4,7 @@ Summary:	Change the resolution of an available vbios mode
 Summary(pl.UTF-8):	Zmiana rozdzielczości dostępnych trybów vbios
 Name:		915resolution
 Version:	0.5.3
-Release:	2
+Release:	3
 License:	Public Domain
 Group:		Applications/System
 Source0:	http://www.geocities.com/stomljen/%{name}-%{version}.tar.gz
@@ -19,20 +19,20 @@ ExclusiveArch:	%{ix86} %{x8664}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-915resolution is a tool to modify the video BIOS of the 800 and
-900 series Intel graphics chipsets. This includes the 845G, 855G,
-and 865G chipsets, as well as 915G, 915GM, and 945G chipsets. This
-modification is neccessary to allow the display of certain graphics
-resolutions for an Xorg or XFree86 graphics server.
+915resolution is a tool to modify the video BIOS of the 800 and 900
+series Intel graphics chipsets. This includes the 845G, 855G, and 865G
+chipsets, as well as 915G, 915GM, and 945G chipsets. This modification
+is neccessary to allow the display of certain graphics resolutions for
+an Xorg or XFree86 graphics server.
 
-915resolution's modifications of the BIOS are transient. There is
-no risk of permanent modification of the BIOS. This also means that
+915resolution's modifications of the BIOS are transient. There is no
+risk of permanent modification of the BIOS. This also means that
 915resolution must be run every time the computer boots inorder for
 it's changes to take effect.
 
-915resolution is derived from the tool 855resolution. However,
-the code differs substantially. 915resolution's code base is much
-simpler. 915resolution also allows the modification of bits per pixel.
+915resolution is derived from the tool 855resolution. However, the
+code differs substantially. 915resolution's code base is much simpler.
+915resolution also allows the modification of bits per pixel.
 
 %description -l pl.UTF-8
 915resolution to narzędzie do modyfikowania BIOS-u graficznego układów
