@@ -17,12 +17,7 @@ fi
 # See how we were called.
 case "$1" in
   start|restart|reload|force-reload)
-	grep -v "^#" /etc/sysconfig/915resolution | while read line
-	do
-		#TODO: make here some better better args checking
-		mode=`echo ${line} | awk '{ print $1;}'`
-		width=`echo ${line} | awk '{ print $2;}'`
-		height=`echo ${line} | awk '{ print $3;}'`
+	grep -vqE "^(#|[[:blank:]]*$)" /etc/sysconfig/915resolution | while read mode width height; do
 		run_cmd "Replacing Mode ${mode} of your card with ${width}x${height}" "915resolution ${mode} ${width} ${height}"
 	done
 	;;
