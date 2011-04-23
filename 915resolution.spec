@@ -4,7 +4,7 @@ Summary:	Change the resolution of an available vbios mode
 Summary(pl.UTF-8):	Zmiana rozdzielczości dostępnych trybów vbios
 Name:		915resolution
 Version:	0.5.3
-Release:	3
+Release:	4
 License:	Public Domain
 Group:		Applications/System
 Source0:	http://www.geocities.com/stomljen/%{name}-%{version}.tar.gz
