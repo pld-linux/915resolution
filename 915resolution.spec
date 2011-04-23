@@ -7,12 +7,12 @@ Version:	0.5.3
 Release:	4
 License:	Public Domain
 Group:		Applications/System
-Source0:	http://www.geocities.com/stomljen/%{name}-%{version}.tar.gz
+Source0:	http://915resolution.mango-lang.org/%{name}-%{version}.tar.gz
 # Source0-md5:	ed287778a53d02c31a7a6a52bc146291
 Source1:	%{name}.sysconfig
 Source2:	%{name}.init
 Patch0:		%{name}-i965GM.patch
-URL:		http://www.geocities.com/stomljen/
+URL:		http://915resolution.mango-lang.org/
 Requires(post,preun):	/sbin/chkconfig
 Requires:	rc-scripts
 ExclusiveArch:	%{ix86} %{x8664}
